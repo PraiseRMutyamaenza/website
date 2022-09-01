@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fashion Ambassador Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.fashiona.com/fashioncss/4/fashion.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kope">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Kope", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="fashion-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="fashion-sidebar fashion-bar-block fashion-white fashion-collapse fashion-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="fashion-container fashion-display-container fashion-padding-16">
+    <i onclick="fashion_close()" class="fa fa-remove fashion-hide-large fashion-button fashion-display-topright"></i>
+    <h3 class="fashion-wide"><b>LOGO</b></h3>
+  </div>
+  <div class="fashion-padding-64 fashion-large fashion-text-grey" style="font-weight:bold">
+    <a href="#" class="fashion-bar-item fashion-button">Shirts</a>
+    <a href="#" class="fashion-bar-item fashion-button">Dresses</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="fashion-button fashion-block fashion-white fashion-left-align" id="myBtn">
+      Jeans <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="fashion-bar-block fashion-hide fashion-padding-large fashion-medium">
+      <a href="#" class="fashion-bar-item fashion-button fashion-light-grey"><i class="fa fa-caret-right fashion-margin-right"></i>Skinny</a>
+      <a href="#" class="fashion-bar-item fashion-button">Relaxed</a>
+      <a href="#" class="fashion-bar-item fashion-button">Bootcut</a>
+      <a href="#" class="fashion-bar-item fashion-button">Straight</a>
+    </div>
+    <a href="#" class="fashion-bar-item fashion-button">Jackets</a>
+    <a href="#" class="fashion-bar-item fashion-button">Gymwear</a>
+    <a href="#" class="fashion-bar-item fashion-button">Blazers</a>
+    <a href="#" class="fashion-bar-item fashion-button">Shoes</a>
+  </div>
+  <a href="#footer" class="fashion-bar-item fashion-button fashion-padding">Contact</a> 
+  <a href="javascript:void(0)" class="fashion-bar-item fashion-button fashion-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="fashion-bar-item fashion-button fashion-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="fashion-bar fashion-top fashion-hide-large fashion-black fashion-xlarge">
+  <div class="fashion-bar-item fashion-padding-24 fashion-wide">LOGO</div>
+  <a href="javascript:void(0)" class="fashion-bar-item fashion-button fashion-padding-24 fashion-right" onclick="fashion_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay fashion-hide-large" onclick="fashion_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="fashion-main" style="margin-left:250px">-
+  <!-- Push down content on small screens -->
+  <div class="fashion-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="fashion-container fashion-xlarge">
+    <p class="fashion-left">Jeans</p>
+    <p class="fashion-right">
+      <i class="fa fa-shopping-cart fashion-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="fashion-display-container w3-container">
+    <img src="/fashionimages/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="fashion-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="fashion-jumbo w3-hide-small">New arrivals</h1>
+      <h1 class="fashion-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="fashion-hide-small">COLLECTION 2016</h1>
+      <p><a href="#jeans" class="fashion-button fashion-black fashion-padding-large fashion-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <div class="fashion-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="fashion-row fashion-grayscale">
+    <div class="fashion-col l3 s6">
+      <div class="fashion-container">
+        <img src="/fashionimages/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+      <div class="fashion-container">
+        <img src="/fashionimages/jeans2.jpg" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </div>
+    </div>
+
+    <div class="fashion3-col l3 s6">
+      <div class="fashion-container">
+        <div class="fashion-display-container">
+          <img src="/fashionimages/jeans2.jpg" style="width:100%">
+          <span class="fashion-tag fasgion-display-topleft">New</span>
+          <div class="fashion-display-middle fashion-display-hover">
+            <button class="fashion-button fashion-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </div>
+      <div class="fashion-container">
+        <img src="/fashionimages/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </div>
+    </div>
+
+    <div class="fashion-col l3 s6">
+      <div class="fashion-container">
+        <img src="/fashionmages/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </div>
+      <div class="fashion-container">
+        <div class="fashion-display-container">
+          <img src="/fashionimages/jeans4.jpg" style="width:100%">
+          <span class="fashion-tag fashion-display-topleft">Sale</span>
+          <div class="fashion-display-middle fashion-display-hover">
+            <button class="fashion-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Vintage Skinny Jeans<br><b class="fashion-text-red">$14.99</b></p>
+      </div>
+    </div>
+
+    <div class="fashion-col l3 s6">
+      <div class="fashion-container">
+        <img src="/fashionimages/jeans4.jpg" style="width:100%">
+        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+      </div>
+      <div class="fashion-container">
+        <img src="/fashionimages/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="fashion-container fashion-black fashion-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="fashion-input fashion-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="fashion-button fashion-red fashion-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="fashion-padding-64 fashion-light-grey fashion-small fashion-center" id="footer">
+    <div class="fashion-row-padding">
+      <div class="fashion-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="fashion-input fashion-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="fashion-input fashion-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="fashion-input fashion-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="fashion-input fashion-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="fashion-button fashion-block fashion-black">Send</button>
+        </form>
+      </div>
+
+      <div class="fashion-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="fashion-col s4 fashion-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Fashion Ambassador</p>
+        <p><i class="fa fa-fw fa-phone"></i> </p>6788943223</p>
+        <p><i class="fa fa-fw fa-envelope"></i> fashiona@mail.com</p>
+        <h4>We accept local currency
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official fashion-hover-opacity fashion-large"></i>
+        <i class="fa fa-instagram fashion-hover-opacity fashion-large"></i>
+        <i class="fa fa-snapchat fashion-hover-opacity fashion-large"></i>
+        <i class="fa fa-pinterest-p fashion-hover-opacity fashion-large"></i>
+        <i class="fa fa-twitter fashion-hover-opacity fashion-large"></i>
+        <i class="fa fa-linkedin fashion-hover-opacity fashion-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fashion-black fashion-center fashion-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="fashiona" target="_blank" class="fashion-hover-opacity">fashiona</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="fashion-modal">
+  <div class="fashion-modal-content fashion-animate-zoom" style="padding:32px">
+    <div class="fashion-container fashion-white fashion-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove fashion-right fashion-button fashion-transparent fashion-xxlarge"></i>
+      <h2 class="fashion-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="fashion-input fashion-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="fashion-button fashion-padding-large fashion-red fashion-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("fashion-show") == -1) {
+    x.className += " fashion-show";
+  } else {
+    x.className = x.className.replace(" fashion-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function fashion_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
